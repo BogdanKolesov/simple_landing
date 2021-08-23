@@ -41,7 +41,7 @@ const InfoColumn = styled.div`
 
 
 
-const InfoSection = ({ primary, lightBg, imgStart, lightTopLine, lightTextDesc, buttonLabel, description, headline, lightText, topLine, start, alt }) => {
+const InfoSection = ({ primary, lightBg, imgStart, lightTopLine, lightTextDesc, buttonLabel, description, headline, lightText, topLine, start, img, alt }) => {
     return (
         <>
             <InfoSec lightBg={lightBg}>
@@ -59,7 +59,7 @@ const InfoSection = ({ primary, lightBg, imgStart, lightTopLine, lightTextDesc, 
                         </InfoColumn>
                         <InfoColumn>
                             <ImgWrapper start={start}>
-                                <Img src={objOneImg} alt={alt} />
+                                <Img src={img} alt={alt} />
                             </ImgWrapper>
                         </InfoColumn>
                     </InfoRow>
