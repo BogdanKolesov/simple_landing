@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Container, TextWrapper, Button, Heading, TopLine, Subtitle, ImgWrapper, Img } from '../../atoms';
 import objOneImg from '../../../assets/images/HomePage/objOne/objOneImg.svg';
+import objTwoImg from '../../../assets/images/HomePage/objTwo/profile.jpg';
+import objThreeImg from '../../../assets/images/HomePage/objThree/objThreeImg.svg';
+import objFourImg from '../../../assets/images/HomePage/objFour/objFourImg.svg';
+
+
 
 const InfoSec = styled.section`
     color: #fff;
