@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Button, Input } from '../../atoms/';
 import { Form } from '../../molecules';
 import { Link } from 'react-router-dom';
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaGithub } from 'react-icons/fa';
 
 const FooterContainer = styled.div`
     background-color: #101522;
@@ -46,7 +47,9 @@ const FooterLinksContainer = styled.div`
 `;
 
 const FooterLinksWrapper = styled.div`
+    width: 100%;
     display: flex;
+    justify-content: space-around;
 
     @media screen and (max-width: 820px){
         align-items: center;
@@ -78,6 +81,59 @@ const FooterLink = styled(Link)`
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
+    &:hover{
+        color: #0467fb;
+        transition: 0.3s ease-out;
+    }
+`;
+
+const SocailMedia = styled.section`
+    min-width: 1000px;
+    width: 100%;
+`;
+
+const SocialMediaWrap = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+
+    @media screen and (max-width:820px){
+        flex-direction: column;
+    }
+`;
+
+const SocialLogo = styled(Link)`
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+`;
+const SocialIcon = styled.div`
+    margin-right: 10px;
+`;
+
+const WebsiteRights = styled.small`
+    color: #fff;
+    margin-bottom: 16px;
+`;
+
+const SocialIcons = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+`;
+
+const SocialIconLink = styled.a`
+    color: #fff;
+    font-size: 24px;
     &:hover{
         color: #0467fb;
         transition: 0.3s ease-out;
@@ -143,6 +199,32 @@ const Footer = () => {
                     </FooterLinkItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>
+            <SocailMedia>
+                <SocialMediaWrap>
+                    <SocialLogo to='/'>
+                        <SocialIcon />
+                        Logotype
+                    </SocialLogo>
+                    <WebsiteRights>Crated by Bogdan Kolesov in 2021</WebsiteRights>
+                    <SocialIcons>
+                        <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
+                            <FaFacebook />
+                        </SocialIconLink>
+                        <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
+                            <FaInstagram />
+                        </SocialIconLink>
+                        <SocialIconLink href='/' target='_blank' aria-label='Youtube'>
+                            <FaYoutube />
+                        </SocialIconLink>
+                        <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
+                            <FaTwitter />
+                        </SocialIconLink>
+                        <SocialIconLink href='/' target='_blank' aria-label='Github'>
+                            <FaGithub />
+                        </SocialIconLink>
+                    </SocialIcons>
+                </SocialMediaWrap>
+            </SocailMedia>
         </FooterContainer>
     );
 };
