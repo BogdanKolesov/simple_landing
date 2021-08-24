@@ -12,6 +12,9 @@ const PricingSection = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width:860px){
+        margin-bottom: 0;
+    }
 `;
 const PricingHeader = styled(Heading)`
     color: #fff;
@@ -22,12 +25,14 @@ const PricingContainer = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 50px;
     background: inherit;
     @media screen and (max-width:860px){
         flex-direction: column;
         width: 100%;
+        padding-top: 20px;
+
     }
 `;
 
@@ -42,6 +47,10 @@ const PricingItem = styled.div`
     border: 2px solid blue;
     border-radius: 10px;
     padding-bottom: 15px;
+    @media screen and (max-width:860px){
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
 `;
 
 const PriceIcon = styled.div`
