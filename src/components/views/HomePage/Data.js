@@ -1,11 +1,3 @@
-import objOneImg from '../../../assets/images/HomePage/objOne/objOneImg.svg';
-import objTwoImg from '../../../assets/images/HomePage/objTwo/profile.jpg';
-import objThreeImg from '../../../assets/images/HomePage/objThree/objThreeImg.svg';
-import objFourImg from '../../../assets/images/HomePage/objFour/objFourImg.svg';
-
-
-
-
 //TODO? img link
 export const homeObjOne = {
     lightBg: false,
@@ -19,7 +11,7 @@ export const homeObjOne = {
     headline: 'Lead Generation Specialist for Online Buisnesses',
     topLine: 'Marceting Agency',
     //TODO? img link
-    img: objOneImg,
+    img: require('../../../assets/images/HomePage/objOne/objOneImg.svg').default,
     alt: 'Image',
     start: ''
 };
@@ -36,7 +28,7 @@ export const homeObjTwo = {
     headline: 'Lead Generation Specialist for Online Buisnesses',
     topLine: 'Marceting Agency',
     //TODO? img link
-    img: objTwoImg,
+    img: require('../../../assets/images/HomePage/objTwo/profile.jpg').default,
     alt: 'Image',
     start: ''
 };
@@ -53,7 +45,7 @@ export const homeObjThree = {
     headline: 'Lead Generation Specialist for Online Buisnesses',
     topLine: 'Marceting Agency',
     //TODO? img link
-    img: objThreeImg,
+    img: require('../../../assets/images/HomePage/objThree/objThreeImg.svg').default,
     alt: 'Image',
     start: ''
 }
@@ -70,7 +62,7 @@ export const homeObjFour = {
     headline: 'Lead Generation Specialist for Online Buisnesses',
     topLine: 'Marceting Agency',
     //TODO? img link
-    img: objFourImg,
+    img: require('../../../assets/images/HomePage/objFour/objFourImg.svg').default,
     alt: 'Image',
     start: ''
 };
