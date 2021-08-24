@@ -7,6 +7,7 @@ import HomePage from '../HomePage/';
 import Services from '../Services/';
 import Products from '../Products/';
 import SignUp from '../SignUp/';
+import { ScrollToTop } from '../../functions';
 
 
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <Router>
       <GlobalTheme />
+      <ScrollToTop />
       <Navbar />
       <Switch>
         <Route path="/" exact component={HomePage} />
