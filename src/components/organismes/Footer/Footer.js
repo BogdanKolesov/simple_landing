@@ -47,7 +47,7 @@ const FooterLinksContainer = styled.div`
 `;
 
 const FooterLinksWrapper = styled.div`
-    width: 100%;
+    width: 100% ;
     display: flex;
     justify-content: space-around;
 

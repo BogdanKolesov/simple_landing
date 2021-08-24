@@ -9,7 +9,7 @@ import { Subtitle } from './Subtitle';
 import { ImgWrapper } from './ImgWrapper';
 import { Img } from './Img';
 import { Input } from './Input';
-
+import { Wrapper } from './Wrapper';
 
 export {
     Container,
@@ -22,5 +22,6 @@ export {
     Subtitle,
     ImgWrapper,
     Img,
-    Input
+    Input,
+    Wrapper
 }
