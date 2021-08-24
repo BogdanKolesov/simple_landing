@@ -2,10 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Container, TextWrapper, Button, Heading, TopLine, Subtitle, ImgWrapper, Img } from '../../atoms';
-import objOneImg from '../../../assets/images/HomePage/objOne/objOneImg.svg';
-import objTwoImg from '../../../assets/images/HomePage/objTwo/profile.jpg';
-import objThreeImg from '../../../assets/images/HomePage/objThree/objThreeImg.svg';
-import objFourImg from '../../../assets/images/HomePage/objFour/objFourImg.svg';
+
 
 
 
@@ -13,6 +10,9 @@ const InfoSec = styled.section`
     color: #fff;
     padding: 160px 0;
     background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
+    @media screen and (max-width:960px){
+        padding: 50px 0;
+    }
 `;
 
 const InfoRow = styled.div`

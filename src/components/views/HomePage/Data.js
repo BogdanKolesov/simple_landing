@@ -1,3 +1,10 @@
+import objOneImg from '../../../assets/images/HomePage/objOne/objOneImg.svg';
+import objTwoImg from '../../../assets/images/HomePage/objTwo/profile.jpg';
+import objThreeImg from '../../../assets/images/HomePage/objThree/objThreeImg.svg';
+import objFourImg from '../../../assets/images/HomePage/objFour/objFourImg.svg';
+
+
+
 
 //TODO? img link
 export const homeObjOne = {
@@ -12,7 +19,7 @@ export const homeObjOne = {
     headline: 'Lead Generation Specialist for Online Buisnesses',
     topLine: 'Marceting Agency',
     //TODO? img link
-    img: '',
+    img: objOneImg,
     alt: 'Image',
     start: ''
 };
@@ -29,9 +36,9 @@ export const homeObjTwo = {
     headline: 'Lead Generation Specialist for Online Buisnesses',
     topLine: 'Marceting Agency',
     //TODO? img link
-    img: '',
+    img: objTwoImg,
     alt: 'Image',
-    start: true
+    start: ''
 };
 
 export const homeObjThree = {
@@ -46,24 +53,24 @@ export const homeObjThree = {
     headline: 'Lead Generation Specialist for Online Buisnesses',
     topLine: 'Marceting Agency',
     //TODO? img link
-    img: '',
+    img: objThreeImg,
     alt: 'Image',
     start: ''
 }
 
 export const homeObjFour = {
-    lightBg: false,
-    primary: true,
+    lightBg: true,
+    primary: false,
     imgStart: 'start',
-    lightTopLine: true,
+    lightTopLine: false,
     lightTextDesc: true,
-    lightText: true,
+    lightText: false,
     buttonLabel: 'Get Started!',
     description: 'We help buisne owners increase their revenue. Our team of unique specialust can help you acheive your buisness goals.',
     headline: 'Lead Generation Specialist for Online Buisnesses',
     topLine: 'Marceting Agency',
     //TODO? img link
-    img: '',
+    img: objFourImg,
     alt: 'Image',
-    start: true
-}
+    start: ''
+};
