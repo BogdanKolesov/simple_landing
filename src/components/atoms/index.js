@@ -8,6 +8,7 @@ import { TopLine } from './TopLine';
 import { Subtitle } from './Subtitle';
 import { ImgWrapper } from './ImgWrapper';
 import { Img } from './Img';
+import { Input } from './Input';
 
 
 export {
@@ -20,5 +21,6 @@ export {
     TopLine,
     Subtitle,
     ImgWrapper,
-    Img
+    Img,
+    Input
 }
